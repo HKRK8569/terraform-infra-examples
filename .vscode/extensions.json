@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"hediet.vscode-drawio",
+		"hashicorp.terraform",
+		"pjmiravalle.terraform-advanced-syntax-highlighting",
+		"Infracost.infracost"
+	],
+	"unwantedRecommendations": []
+}
