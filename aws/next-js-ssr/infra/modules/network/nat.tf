@@ -3,7 +3,7 @@ resource "aws_nat_gateway" "this" {
   allocation_id = aws_eip.nat[count.index].id
 
   # az分natを作成するs
-  subnet_id =  aws_subnet.public[count.index].id
+  subnet_id = aws_subnet.public[count.index].id
 
   tags = merge(
     var.tags,
