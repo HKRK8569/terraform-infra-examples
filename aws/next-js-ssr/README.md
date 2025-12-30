@@ -12,5 +12,21 @@ cloudfrontでSSRで生成したHTMLをキャッシュする
 
 ## デプロイ手順
 
+AWSのアクセスキーを貼り付け
+
+```
+cd nextjs-ssr/modules/network
+terraform init
+terraform plan -var-file=../../env/terraform.tfvars
+terraform apply -var-file=../../env/terraform.tfvars
+```
+
+## 削除方法
+
+```
+terraform destroy -var-file=../../env/terraform.tfvars
+```
 
 ## 構成図
+
+![構成図](next-js-ssr-diagram.png)
