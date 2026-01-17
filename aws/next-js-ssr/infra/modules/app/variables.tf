@@ -37,3 +37,8 @@ variable "container_port" {
   type        = number
   default     = 3000
 }
+
+variable "container_image" {
+  description = "container名"
+  type        = string
+}

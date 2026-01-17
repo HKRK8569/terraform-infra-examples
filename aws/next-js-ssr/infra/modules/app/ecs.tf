@@ -35,9 +35,8 @@ resource "aws_ecs_task_definition" "this" {
 
   container_definitions = jsonencode([
     {
-      name = "app"
-      # TODO:imageを作成後設定
-      #   image     = var.container_image
+      name      = "app"
+      image     = var.container_image
       essential = true
 
       portMappings = [
