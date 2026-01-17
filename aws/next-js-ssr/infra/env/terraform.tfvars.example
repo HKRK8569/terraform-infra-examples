@@ -38,4 +38,4 @@ db_password = ""
 
 container_port = 3000
 
-container_image = "{ACCOUNT_ID}.dkr.ecr.{REGION}.amazonaws.com/app:24.13.0""
+container_image = "{ACCOUNT_ID}.dkr.ecr.{REGION}.amazonaws.com/{image_name}:{tag}"
