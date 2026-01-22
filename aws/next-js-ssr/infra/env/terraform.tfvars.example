@@ -1,0 +1,41 @@
+# 共通
+region      = "ap-northeast-1"
+name_prefix = "next-js-ssr"
+
+tags = {
+  Project = "next-js-ssr"
+  Terraform  = "true"
+}
+
+# VPC
+vpc_cidr = "10.0.0.0/16"
+
+# subnet
+azs = [
+  "ap-northeast-1a",
+  "ap-northeast-1c"
+]
+
+public_subnet_cidrs = [
+  "10.0.1.0/24",
+  "10.0.2.0/24"
+]
+
+private_subnet_cidrs = [
+  "10.0.101.0/24",
+  "10.0.102.0/24"
+]
+
+# aurora
+
+db_name = ""
+
+db_username = ""
+
+db_password = ""
+
+# ecs
+
+container_port = 3000
+
+container_image = "{ACCOUNT_ID}.dkr.ecr.{REGION}.amazonaws.com/{image_name}:{tag}"
