@@ -1,4 +1,4 @@
-# templete
+# template
 
 ## 概要
 
