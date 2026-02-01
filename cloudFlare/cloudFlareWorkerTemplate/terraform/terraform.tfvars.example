@@ -2,5 +2,5 @@ cloudflare_api_token = "YOUR_CLOUDFLARE_API_TOKEN"
 account_id  = "YOUR_ACCOUNT_ID"
 script_name = "worker"
 compatibility_date = "YYYY-LL-DD"
-worker_bundle_path = "dist/worker.mjs"
+worker_bundle_path = "../dist/worker.cjs"
 cron_schedules = ["*/30 * * * *"]
